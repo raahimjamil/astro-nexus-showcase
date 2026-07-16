@@ -457,14 +457,15 @@ function Portfolio() {
               <i className="fa-solid fa-sparkles mr-2" />
               Portfolio · 2026
             </div>
-            <h1 className="hero-title font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-8xl">
-              {"RAAHIM".split("").map((c, i) => (
-                <span key={`a${i}`} className="inline-block">
-                  {c}
-                </span>
-              ))}
-              <br />
-              <span className="text-gradient inline-block">
+            <h1 className="hero-title font-display text-5xl font-bold tracking-tight sm:text-6xl lg:text-8xl">
+              <span className="block leading-[1.1] pb-2">
+                {"RAAHIM".split("").map((c, i) => (
+                  <span key={`a${i}`} className="inline-block">
+                    {c}
+                  </span>
+                ))}
+              </span>
+              <span className="text-gradient block leading-[1.1] pb-2">
                 {"JAMIL".split("").map((c, i) => (
                   <span key={`b${i}`} className="inline-block">
                     {c}
