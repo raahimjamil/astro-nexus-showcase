@@ -84,14 +84,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Portfolio of Raahim Jamil — Product Owner, Software QA Engineer, technology enthusiast, and former professional esports athlete representing Pakistan.",
       },
       { name: "author", content: "Raahim Jamil" },
-      { property: "og:title", content: "Raahim Jamil — Portfolio" },
+      { property: "og:title", content: "Raahim Jamil — Product Owner, QA Engineer & Esports Athlete" },
       {
         property: "og:description",
         content:
-          "Product Owner, QA Engineer, Technology Enthusiast & Former Pro Esports Athlete.",
+          "Portfolio of Raahim Jamil — Product Owner, Software QA Engineer, technology enthusiast, and former professional esports athlete representing Pakistan.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Raahim Jamil — Product Owner, QA Engineer & Esports Athlete" },
+      { name: "twitter:description", content: "Portfolio of Raahim Jamil — Product Owner, Software QA Engineer, technology enthusiast, and former professional esports athlete representing Pakistan." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/k4Ap4qUh7oa9CcBkT3MpyuZIEmg1/social-images/social-1784197910493-WhatsApp_Image_2026-06-25_at_11.15.23_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/k4Ap4qUh7oa9CcBkT3MpyuZIEmg1/social-images/social-1784197910493-WhatsApp_Image_2026-06-25_at_11.15.23_PM.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
