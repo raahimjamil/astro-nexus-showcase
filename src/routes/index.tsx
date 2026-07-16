@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { createFileRoute } from "@tanstack/react-router";
 import ThreeBackground from "@/components/ThreeBackground";
-import profileImg from "@/assets/profile.jpg";
+import profileAsset from "@/assets/profile.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Portfolio,
@@ -515,7 +515,7 @@ function Portfolio() {
           <div data-parallax="14" className="flex justify-center lg:justify-end">
             <div className="hero-portrait profile-ring animate-float relative aspect-square w-64 rounded-full sm:w-80 lg:w-[22rem]">
               <img
-                src={profileImg}
+                src={profileAsset.url}
                 alt="Portrait of Raahim Jamil"
                 width={768}
                 height={768}
