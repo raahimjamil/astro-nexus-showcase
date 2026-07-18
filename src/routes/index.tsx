@@ -928,15 +928,17 @@ function Portfolio() {
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
-              { i: "fa-github", href: "#" },
-              { i: "fa-linkedin-in", href: "#" },
-              { i: "fa-instagram", href: "#" },
-              { i: "fa-envelope", href: "#", solid: true },
+              { i: "fa-github", href: "https://github.com/raahimjamil", label: "GitHub" },
+              { i: "fa-linkedin-in", href: "https://www.linkedin.com/in/raahim-jamil-56634b238/", label: "LinkedIn" },
+              { i: "fa-instagram", href: "https://www.instagram.com/raahimzpov", label: "Instagram" },
+              { i: "fa-envelope", href: "mailto:raahim3130@gmail.com", label: "Email", solid: true },
             ].map((s) => (
               <a
                 key={s.i}
                 href={s.href}
-                aria-label={s.i}
+                target={s.href.startsWith("mailto:") ? undefined : "_blank"}
+                rel="noopener noreferrer"
+                aria-label={s.label}
                 className="glass tilt-card grid h-14 w-14 place-items-center rounded-2xl text-lg text-white/80 transition hover:text-white"
               >
                 <i
